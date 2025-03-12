@@ -9,3 +9,5 @@ value = cipher.nonce
 ciphertext, tag = cipher.encrypt_and_digest(plaintext)
 
 print("Ciphertext:", ciphertext)
+
+
