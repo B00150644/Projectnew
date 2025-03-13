@@ -23,13 +23,13 @@ conn = sqlite3.connect("password_manager.db")
 cursor = conn.cursor()
 
 # Fetch the latest stored password
-cursor.execute("SELECT website, username, encrypted_password FROM passwords ORDER BY id DESC LIMIT 1")
+cursor.execute("SELECT Account_type, username, encrypted_password FROM passwords ORDER BY id DESC LIMIT 1")
 row = cursor.fetchone()
 
 if row:
-    website, username, encrypted_password = row
+    Account_type, username, encrypted_password = row
     decrypted_password = decrypt_password(encrypted_password)
-    print(f"Website: {website}")
+    print(f"Account_type: {Account_type}")
     print(f"Username: {username}")
     print(f"Decrypted Password: {decrypted_password}")
 else:
