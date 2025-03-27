@@ -38,7 +38,7 @@ def encrypt_password(plain_password):
     return base64.b64encode(nonce + ciphertext).decode()
 
 # Hardcoded password
-password = "PasswordTest!"
+password = "PasswordTestMira"
 encrypted_password = encrypt_password(password)
 
 # Print encrypted password
