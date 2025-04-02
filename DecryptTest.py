@@ -1,6 +1,5 @@
-import sqlite3
-from Crypto.Cipher import AES
 import base64
+from Crypto.Cipher import AES
 
 # Load AES key from file
 def load_key():
@@ -17,22 +16,3 @@ def decrypt_password(encrypted_password):
     cipher = AES.new(AES_KEY, AES.MODE_EAX, nonce=nonce)
     decrypted_password = cipher.decrypt(ciphertext)
     return decrypted_password.decode()
-
-# Connect to SQLite
-conn = sqlite3.connect("password_manager.db")
-cursor = conn.cursor()
-
-# Fetch the latest stored password
-cursor.execute("SELECT Account_type, username, encrypted_password FROM passwords ORDER BY id DESC LIMIT 1")
-row = cursor.fetchone()
-
-if row:
-    Account_type, username, encrypted_password = row
-    decrypted_password = decrypt_password(encrypted_password)
-    print(f"Account_type: {Account_type}")
-    print(f"Username: {username}")
-    print(f"Decrypted Password: {decrypted_password}")
-else:
-    print("No passwords found in the database.")
-
-conn.close()

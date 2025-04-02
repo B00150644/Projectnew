@@ -37,33 +37,3 @@ def encrypt_password(plain_password):
     ciphertext, tag = cipher.encrypt_and_digest(plain_password.encode())
     return base64.b64encode(nonce + ciphertext).decode()
 
-# Hardcoded password
-password = "PasswordTestMira"
-encrypted_password = encrypt_password(password)
-
-# Print encrypted password
-print(f"Encrypted Password (AES): {encrypted_password}")
-
-# Connect to SQLite
-conn = sqlite3.connect("password_manager.db")
-cursor = conn.cursor()
-
-# Create table if it doesn’t exist
-cursor.execute("""
-    CREATE TABLE IF NOT EXISTS passwords (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        Account_type TEXT NOT NULL,
-        username TEXT NOT NULL,
-        encrypted_password TEXT NOT NULL
-    )
-""")
-
-# Insert encrypted password
-cursor.execute("INSERT INTO passwords (Account_type, username, encrypted_password) VALUES (?, ?, ?)", 
-               ("examples.com", "user1234", encrypted_password))
-
-# Commit & close
-conn.commit()
-conn.close()
-
-print("Encrypted password has been stored in the database successfully!")

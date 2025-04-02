@@ -1,6 +1,6 @@
 import sqlite3
-from HashTest import encrypt_password
 from DecryptTest import decrypt_password
+from HashTest import encrypt_password
 
 # Connect to SQLite
 conn = sqlite3.connect("password_manager.db")
@@ -10,7 +10,7 @@ cursor = conn.cursor()
 cursor.execute("""
     CREATE TABLE IF NOT EXISTS passwords (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        Account_type TEXT NOT NULL,
+        account_type TEXT NOT NULL,
         username TEXT NOT NULL,
         encrypted_password TEXT NOT NULL
     )
@@ -24,7 +24,7 @@ def add_password():
 
     encrypted_password = encrypt_password(password)
 
-    cursor.execute("INSERT INTO passwords (Account_type, username, encrypted_password) VALUES (?, ?, ?)", 
+    cursor.execute("INSERT INTO passwords (account_type, username, encrypted_password) VALUES (?, ?, ?)", 
                    (account_type, username, encrypted_password))
 
     conn.commit()
@@ -32,7 +32,7 @@ def add_password():
 
 def view_passwords():
     """Retrieve and display all stored passwords."""
-    cursor.execute("SELECT Account_type, username, encrypted_password FROM passwords")
+    cursor.execute("SELECT account_type, username, encrypted_password FROM passwords")
     rows = cursor.fetchall()
 
     if not rows:
