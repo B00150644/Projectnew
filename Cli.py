@@ -1,6 +1,6 @@
 import sqlite3
-from DecryptTest import decrypt_password
-from HashTest import encrypt_password
+from Decrypt import decrypt_password
+from Hash import encrypt_password
 import bcrypt
 
 # Connect to SQLite
