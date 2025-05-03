@@ -19,7 +19,7 @@ AES_KEY = load_key()  #Load the aes256 key for decryption
 def decrypt_password(encrypted_password):
 #Decode the base64encoded string to retrieve the raw bytes
     encrypted_data = base64.b64decode(encrypted_password)
-#Extract the first 16 bytes as the nonce (used during encryption)
+#Extract the first 16 bytes as the nonce (used during encryption) in AES EAX mode the nonce is 16 bytes
     nonce = encrypted_data[:16]
 #The remainder is the ciphertext
     ciphertext = encrypted_data[16:]
