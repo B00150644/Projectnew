@@ -26,6 +26,7 @@ Technologies used in the Password Manager
 How to run
 
 Prerequisites
+
 •	Python 3.10+
 
 •	Powershell
