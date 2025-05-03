@@ -9,19 +9,31 @@ This project was built as a third-year final year college project to help users 
 
 How the system looks 
 ===
-
+•Heres is the begining of setting up you master user
 
 ![image](https://github.com/user-attachments/assets/bdd515a7-135f-4b4f-9f7d-f6a06ed9227a)
 
+•Here is the running of the password managers cli
+
 ![image](https://github.com/user-attachments/assets/a80b566b-284c-4e39-bddf-5ed83b8b9605)
+
+•An example of how the adding user function works
 
 ![image](https://github.com/user-attachments/assets/24122ff4-63ba-451e-b281-c77ac52d789d)
 
+•An example of the viewing passwords function
+
 ![image](https://github.com/user-attachments/assets/332a08e7-8a68-4bee-bf1f-de36fdf390cd)
 
+•An example of Removing a password
+ 
 ![image](https://github.com/user-attachments/assets/984eb048-7588-4787-92f9-f66369a8939e)
 
+•An example of an error when trying to delete a user that doesnt exist
+
 ![image](https://github.com/user-attachments/assets/53df9e58-c747-4a6e-8062-d252f10bda20)
+
+•Finally exiting of the cli
 
 ![image](https://github.com/user-attachments/assets/90d689f0-14c2-434c-a1a8-98928a90ff32)
 
