@@ -23,4 +23,12 @@ Technologies used in the Password Manager
 
 •	sqlite
 
+How to run
 
+clone github
+
+cd into projectnew File
+
+Run Virtual environment .\venv\Scripts\Activate.ps1
+
+python .\Cli.py
