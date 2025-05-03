@@ -22,7 +22,7 @@ How the system looks
 
 ![image](https://github.com/user-attachments/assets/90d689f0-14c2-434c-a1a8-98928a90ff32)
 
-Features
+**Features
 
 •	Master passwords are hashed using bcrypt.
 
