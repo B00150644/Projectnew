@@ -25,7 +25,12 @@ Technologies used in the Password Manager
 
 How to run
 
-clone github
+Prerequisites
+•	Python 3.10+
+
+•	Powershell
+
+clone github - git clone https://github.com/B00150644/Projectnew.git
 
 cd into projectnew File
 
