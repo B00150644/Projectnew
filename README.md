@@ -32,6 +32,8 @@ Prerequisites
 
 How to run
 
+Open Powershell - cd $HOME\Desktop
+
 clone github - git clone https://github.com/B00150644/Projectnew.git
 
 cd into projectnew File
