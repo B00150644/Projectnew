@@ -32,11 +32,20 @@ Prerequisites
 
 How to run
 
+git clone https://github.com/B00150644/Projectnew.git
+
 Open Powershell - cd $HOME\Desktop
 
-clone github - git clone https://github.com/B00150644/Projectnew.git
+cd Projectnew
 
-cd into projectnew File
+python -m venv venv
+
+.\venv\Scripts\activate
+
+python .\Cli.py
+
+pip install -r requirements.txt
+
 
 Run Virtual environment .\venv\Scripts\Activate.ps1
 
