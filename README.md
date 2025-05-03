@@ -74,7 +74,11 @@ How to run
 7.	python .\Cli.py
 
 Sources 
+
 https://pycryptodome.readthedocs.io/en/latest/
+
 https://www.pycryptodome.org/src/cipher/cipher
+
 https://www.geeksforgeeks.org/hashing-passwords-in-python-with-bcrypt/
+
 https://geekpython.medium.com/easy-password-hashing-using-bcrypt-in-python-3a706a26e4bf
