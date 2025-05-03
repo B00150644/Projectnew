@@ -23,13 +23,14 @@ Technologies used in the Password Manager
 
 •	sqlite
 
-How to run
 
 Prerequisites
 
 •	Python 3.10+
 
 •	Powershell
+
+How to run
 
 clone github - git clone https://github.com/B00150644/Projectnew.git
 
