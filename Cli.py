@@ -54,8 +54,7 @@ def add_password(user_id):
 
     cursor.execute("""
         INSERT INTO passwords (account_type, username, encrypted_password, user_id)
-        VALUES (?, ?, ?, ?)
-    """, (account_type, username, encrypted_password, user_id))
+        VALUES (?, ?, ?, ?)""", (account_type, username, encrypted_password, user_id))
 
     conn.commit()
     print("Password stored successfully!")
