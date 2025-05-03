@@ -39,14 +39,15 @@ How the system looks
 
 Features
 ===
+•	Multiple Master Accounts To store different Users passwords
 
 •	Master passwords are hashed using bcrypt.
-
-•	Multiple Master Users
 
 •	User passwords are encrypted using AES-256 in EAX mode.
 
 •	Users may remove add and view all entries
+
+•	Stored using Sql lite
 
 Technologies used in the Password Manager
 ===
