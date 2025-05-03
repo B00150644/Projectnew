@@ -4,9 +4,12 @@ Password Manager Project
 A python project to simply and securely manage users passwords 
 
 Motivation
+===
 This project was built as a third-year final year college project to help users manage their passwords securely and locally without relying on vulnerable cloud-based services.
 
 How the system looks 
+===
+
 
 ![image](https://github.com/user-attachments/assets/bdd515a7-135f-4b4f-9f7d-f6a06ed9227a)
 
@@ -22,7 +25,8 @@ How the system looks
 
 ![image](https://github.com/user-attachments/assets/90d689f0-14c2-434c-a1a8-98928a90ff32)
 
-**Features
+Features
+===
 
 •	Master passwords are hashed using bcrypt.
 
@@ -33,6 +37,7 @@ How the system looks
 •	Users may remove add and view all entries
 
 Technologies used in the Password Manager
+===
 
 •	Python 
 
@@ -44,20 +49,23 @@ Technologies used in the Password Manager
 
 
 Prerequisites
+===
 
 •	Python 3.10+
 
 •	Powershell
 
 File Structure
+===
 - cli.py – Main command-line interface
 - encrypt.py – AES encryption functions
 - decrypt.py – AES decryption functions
-- setupmaster.py – Used to set the master password
+- setupmaster.py – Used to set the master password using bcrypt
 - users.db – SQLite database storing users and encrypted passwords
 - requirements.txt - To download all required libraries
 
 How to run
+===
 
 1.	git clone https://github.com/B00150644/Projectnew.git
 
@@ -74,6 +82,7 @@ How to run
 7.	python .\Cli.py
 
 Sources
+===
 
 https://pycryptodome.readthedocs.io/en/latest/
 
