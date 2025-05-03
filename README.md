@@ -4,6 +4,7 @@ Password Manager Project
 A python project to simply and securely manage users passwords 
 
 Features
+
 •	Hashed Master Password
 
 •	Multiple Master Users
