@@ -3,6 +3,11 @@
 Password Manager Project
 A python project to simply and securely manage users passwords 
 
+How the system looks 
+
+![image](https://github.com/user-attachments/assets/bdd515a7-135f-4b4f-9f7d-f6a06ed9227a)
+
+
 Features
 
 •	Hashed Master Password
