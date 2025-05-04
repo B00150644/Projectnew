@@ -88,13 +88,13 @@ How to run
 
 5.	python -m venv venv
 
-6.	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process (ONLY IF ERROR)
-
 7.	.\venv\Scripts\activate
 
-8.	pip install -r requirements.txt
+8.	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process (ONLY IF ERROR)
 
-9.	python .\Cli.py
+9.	pip install -r requirements.txt
+
+10.	python .\Cli.py
 
 Sources
 ===
