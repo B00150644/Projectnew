@@ -86,13 +86,15 @@ How to run
 
 3.	cd Projectnew
 
-4.	python -m venv venv
+5.	python -m venv venv
 
-5.	.\venv\Scripts\activate
+6.	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process (ONLY IF ERROR)
 
-6.	pip install -r requirements.txt
+7.	.\venv\Scripts\activate
 
-7.	python .\Cli.py
+8.	pip install -r requirements.txt
+
+9.	python .\Cli.py
 
 Sources
 ===
