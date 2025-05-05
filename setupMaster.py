@@ -1,5 +1,6 @@
 import bcrypt
 import sqlite3
+import getpass
 
 def setup_master_password():
     conn = sqlite3.connect("password_manager.db")
@@ -14,7 +15,7 @@ def setup_master_password():
     """)
   
     username = input("Enter a new username: ")
-    password = input("Set a master password: ").encode('utf-8')
+    password = getpass.getpass("Set a master password: ").encode('utf-8')  # Use getpass for hidden input
     hashed = bcrypt.hashpw(password, bcrypt.gensalt())
 
     try:

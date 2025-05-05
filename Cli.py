@@ -2,6 +2,7 @@ import sqlite3
 from Decrypt import decrypt_password
 from Hash import encrypt_password
 import bcrypt
+import getpass
 
 # Connect to SQLite
 conn = sqlite3.connect("password_manager.db")
@@ -50,7 +51,7 @@ def check_master_password():
 def add_password(user_id):
     account_type = input("Enter Account Type: ")
     username = input("Enter Username: ")
-    password = input("Enter Password: ")
+    password = getpass.getpass("Enter Password: ")
     #Encrypts the plaintext password using AES encryption
     encrypted_password = encrypt_password(password)
     # Inserts the account credentials and aes encrypted password into the database
@@ -100,7 +101,7 @@ def login_user():
     cursor = conn.cursor()
 
     username = input("Username: ")
-    entered_password = input("Master Password: ").encode('utf-8')
+    entered_password = getpass.getpass("Master Password: ").encode('utf-8')
 
     cursor.execute("SELECT id, master_hash FROM users WHERE username = ?", (username,))
     result = cursor.fetchone()
