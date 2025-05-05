@@ -92,9 +92,11 @@ How to run
 
 8.	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process (ONLY IF ERROR)
 
-9.	pip install -r requirements.txt
+9.	(If error run this after the policy change ) .\venv\Scripts\Activate.ps1
 
-10.	python .\Cli.py
+10.	pip install -r requirements.txt
+
+11.	python .\Cli.py
 
 Sources
 ===
