@@ -95,6 +95,29 @@ def remove_password(user_id):
             print("No account found with that ID.")
     except ValueError:
         print("Invalid input. Please enter a numeric ID.")
+#Edit password option reuses add password and deletes account profile from user id
+def edit_password(user_id):
+    view_passwords(user_id)
+
+    try:
+        entry_id = int(input("Enter the Account number of the account to edit: "))
+        #Check if the entry exists for this user
+        cursor.execute("SELECT * FROM passwords WHERE id = ? AND user_id = ?", (entry_id, user_id))
+        if cursor.fetchone() is None:
+            print("No account found with that ID.")
+            return
+        
+        #Delete the selected entry
+        cursor.execute("DELETE FROM passwords WHERE id = ? AND user_id = ?", (entry_id, user_id))
+        conn.commit()
+        print("Old account entry removed. Please enter new details:")
+        
+        #Add a new password which just reuses the old function
+        add_password(user_id)
+
+    except ValueError:
+        print("Invalid input. Please enter a numeric ID.")
+
 #Authenticates a user by checking their username and master password against the database.     
 def login_user():
     conn = sqlite3.connect("password_manager.db")
@@ -131,7 +154,8 @@ def main():
         print("1. Add Password")
         print("2. View Passwords")
         print("3. Remove Password")
-        print("4. Exit")
+        print("4. Edit Password")
+        print("5. Exit")
 
         choice = input("Enter your choice: ")
 
@@ -142,6 +166,8 @@ def main():
         elif choice == "3":
             remove_password(user_id)
         elif choice == "4":
+            edit_password(user_id)
+        elif choice == "5":
             conn.close()
             print("Exiting...")
             break
