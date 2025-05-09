@@ -11,31 +11,35 @@ How the system looks
 ===
 •Heres is the begining of setting up you master user
 
-![image](https://github.com/user-attachments/assets/bdd515a7-135f-4b4f-9f7d-f6a06ed9227a)
+![image](https://github.com/user-attachments/assets/1516b8d9-2f60-48e5-bff7-16fab2563cc8)
 
 •Here is the running of the password managers cli
 
-![image](https://github.com/user-attachments/assets/a80b566b-284c-4e39-bddf-5ed83b8b9605)
+![image](https://github.com/user-attachments/assets/43864a3a-5007-443f-aef3-1800e00e5212)
 
 •An example of how the adding user function works
 
-![image](https://github.com/user-attachments/assets/24122ff4-63ba-451e-b281-c77ac52d789d)
+![image](https://github.com/user-attachments/assets/8dc5c4a3-744e-4a7d-ba14-230a2124f0c5)
 
 •An example of the viewing passwords function
 
-![image](https://github.com/user-attachments/assets/332a08e7-8a68-4bee-bf1f-de36fdf390cd)
+![image](https://github.com/user-attachments/assets/a7cecbd0-7122-477d-86a0-f65f9c143337)
 
 •An example of Removing a password
  
-![image](https://github.com/user-attachments/assets/984eb048-7588-4787-92f9-f66369a8939e)
+![image](https://github.com/user-attachments/assets/e70a12b6-27ee-4888-a251-e373deeb9875)
+
+•An example of an editing an account
+
+![image](https://github.com/user-attachments/assets/c6400409-cd31-4160-8a43-14c2745548f8)
 
 •An example of an error when trying to delete a user that doesnt exist
 
-![image](https://github.com/user-attachments/assets/53df9e58-c747-4a6e-8062-d252f10bda20)
+![image](https://github.com/user-attachments/assets/b6dafb7d-3f0a-490f-a770-f3d015b3960c)
 
 •Finally exiting of the cli
 
-![image](https://github.com/user-attachments/assets/90d689f0-14c2-434c-a1a8-98928a90ff32)
+![image](https://github.com/user-attachments/assets/25c454f3-eeb9-4cd2-92cb-9619b1ae9fac)
 
 Features
 ===
