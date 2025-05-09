@@ -68,7 +68,7 @@ Technologies used in the Password Manager
 Prerequisites
 ===
 
-•	Python 3.10+
+•	Python 3.13+
 
 •	Powershell
 
